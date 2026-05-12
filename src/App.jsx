@@ -5,8 +5,17 @@ import ChiSiamo from "./pages/ChiSiamo.jsx";
 import Prodotti from "./pages/Prodotti.jsx";
 import LayoutPage from "./layouts/LayoutPage.jsx";
 import dreamTeam from "./data/dreamTeam.js";
+import useFetch from "./hooks/useFetch.js";
+import { useEffect } from "react";
+
+const fakeEcomUrl = 'https://fakestoreapi.com/products'
 
 function App() {
+
+  useEffect(() => {
+    useFetch(fakeEcomUrl)
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -15,7 +24,7 @@ function App() {
           <Route path="" element={<Homepage />} />
 
           {/* http://localhost:5173/chi-siamo */}
-          <Route path="chi-siamo" element={<ChiSiamo />} />
+          <Route path="chi-siamo" element={<ChiSiamo member={dreamTeam} />} />
 
           {/* http://localhost:5173/prodotti */}
           <Route path="prodotti" element={<Prodotti />} />
