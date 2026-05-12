@@ -10,13 +10,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link to="" className="nav-link active" aria-current="page">Homepage</Link>
+                            <Link to="" className="nav-link fw-bold" aria-current="page">Homepage</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="chi-siamo" className="nav-link">Chi Siamo</Link>
+                            <Link to="chi-siamo" className="nav-link fw-bold">Chi Siamo</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="prodotti" className="nav-link" >Prodotti</Link>
+                            <Link to="prodotti" className="nav-link fw-bold" >Prodotti</Link>
                         </li>
                     </ul>
                 </div>

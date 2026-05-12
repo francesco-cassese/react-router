@@ -1,48 +1,20 @@
-function Card() {
+function Card({ image, title, category, description, price, rating }) {
     return (
-        <article>
+        < article className="card p-3 h-100 d-flex f-column justify-content-between" >
+            <h5>{title}</h5>
             <div className="container-img">
-                <img src={image} alt={title} />
+                <img src={image} alt={title} className="d-block w-100" />
             </div>
-            <h1>{title}</h1>
-            <div className="container-info">
+            <div className="container-info small">
                 <span>{category}</span>
                 <p>{description}</p>
-                <span>{price}</span>
-                <span>{rating.rate}</span>
+                <div className="container-details d-flex fw-bold justify-content-between">
+                    <span>&euro;{price}</span>
+                    <span>{rating?.rate}</span>
+                    <span>{rating?.count}</span>
+                </div>
             </div>
         </article>
     )
 }
 export default Card
-
-
-// category
-// :
-// "men's clothing"
-// description
-// :
-// "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
-// id
-// :
-// 1
-// image
-// :
-// "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
-// price
-// :
-// 109.95
-// rating
-// :
-// count
-// :
-// 120
-// rate
-// :
-// 3.9
-// [[Prototype]]
-// :
-// Object
-// title
-// :
-// "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
