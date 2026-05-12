@@ -1,29 +1,15 @@
-import { Link } from "react-router"
+import { Link, Outlet } from "react-router"
 
 function LayoutPage() {
     return (
-        <header>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link to="" className="nav-link active" aria-current="page">Homepage</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="chi-siamo" className="nav-link">Chi Siamo</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="prodotti" className="nav-link" >Prodotti</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <>
+            <header>
+                <Navbar />
+            </header>
+            <main>
+                <Outlet />
+            </main>
+        </>
     )
 }
 export default LayoutPage
