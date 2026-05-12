@@ -1,8 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
