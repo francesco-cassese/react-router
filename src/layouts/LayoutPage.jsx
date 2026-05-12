@@ -1,4 +1,3 @@
-import Homepage from "../pages/Homepage"
 import { Link } from "react-router"
 
 function LayoutPage() {
