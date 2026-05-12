@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
