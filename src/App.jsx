@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import NotFound from "./pages/NotFound";
 import Homepage from "./pages/Homepage";
 import ChiSiamo from "./pages/ChiSiamo";
+import Prodotti from "./pages/Prodotti";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="chi-siamo" element={<ChiSiamo />} />
 
         {/* http://localhost:5173/prodotti */}
-        <Route path="prodotti" element={<ChiSiamo />} />
+        <Route path="prodotti" element={<Prodotti />} />
 
         {/* Pagina non trovata*/}
         <Route path="*" element={<NotFound />} />
