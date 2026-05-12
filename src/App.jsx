@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import NotFound from "./pages/NotFound";
-import Homepage from "./pages/Homepage";
-import ChiSiamo from "./pages/ChiSiamo";
-import Prodotti from "./pages/Prodotti";
-import LayoutPage from "./layouts/LayoutPage";
+import NotFound from "./pages/NotFound.jsx";
+import Homepage from "./pages/Homepage.jsx";
+import ChiSiamo from "./pages/ChiSiamo.jsx";
+import Prodotti from "./pages/Prodotti.jsx";
+import LayoutPage from "./layouts/LayoutPage.jsx";
+import dreamTeam from "./data/dreamTeam.js";
 
 function App() {
   return (
