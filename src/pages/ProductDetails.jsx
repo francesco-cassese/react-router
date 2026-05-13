@@ -18,7 +18,7 @@ function ProductDetails({ productList, fakeEcomUrl }) {
     }
 
     return (
-        <div className="container py-5 d-flex justify-content-center">
+        <div className="container col-3 py-5 d-flex justify-content-center">
             <Card
                 image={product.image}
                 title={product.title}
