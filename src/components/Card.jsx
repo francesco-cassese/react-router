@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Link } from "react-router"
 
 function Card({ image, title, category, description, price, rating }) {
     const [isExpanded, setIsExpanded] = useState(false);
