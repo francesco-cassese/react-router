@@ -4,6 +4,8 @@ import { useNavigate } from "react-router";
 function ProductList({ products }) {
     console.log('productList', products);
 
+    const { navigate } = useNavigate();
+
     const uniqueCategories = [];
     for (let i = 0; i < products.length; i++) {
         const currentCategory = products[i].category;
