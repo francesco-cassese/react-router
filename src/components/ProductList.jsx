@@ -16,7 +16,7 @@ function ProductList({ products }) {
         <div className="container py-4">
 
             {uniqueCategories.map(category => (
-                <section key={category} className="mb-5">
+                <section key={category} id={category} className="mb-5">
                     <h2 className="border-bottom pb-2 mb-4 text-secondary">
                         {category}
                     </h2>
