@@ -15,7 +15,7 @@ function useFetch(url) {
             .catch(error => {
                 console.error(error);
             });
-    }, []);
+    }, [url]);
     return data;
 }
 
