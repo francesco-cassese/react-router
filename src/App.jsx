@@ -18,6 +18,7 @@ function App() {
     <BrowserRouter >
       <Routes>
         <Route element={<LayoutPage />}>
+
           {/* http://localhost:5173/ */}
           <Route path="" element={<Homepage />} />
 
@@ -29,6 +30,7 @@ function App() {
 
           {/* http://localhost:5173/prodotti */}
           <Route path="prodotti/:id" element={<ProductDetails productList={data} />} />
+
         </Route>
         {/* Pagina non trovata*/}
         <Route path="*" element={<NotFound />} />
