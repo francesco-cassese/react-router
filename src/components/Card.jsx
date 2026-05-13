@@ -7,7 +7,7 @@ function Card({ image, title, category, description, price, rating }) {
                         <img src={image} alt={title} />
                     </div>
                 </div>
-                <div className="section-right">
+                <div className="section-right mx-5">
                     <h1>{title}</h1>
                     <p className="bg-succes">{category}</p>
                     <h2 className="fw-bold">&euro;{price}</h2>
