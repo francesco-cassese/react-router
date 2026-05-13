@@ -1,6 +1,6 @@
 function Card({ image, title, category, description, price, rating }) {
     return (
-        <section className="container py-4">
+        <section className="container py-2">
             <div className="d-flex align-items-center">
                 <div className="section-left">
                     <div className="single-product-img">
@@ -8,8 +8,8 @@ function Card({ image, title, category, description, price, rating }) {
                     </div>
                 </div>
                 <div className="section-right mx-5">
-                    <h1>{title}</h1>
-                    <p className="bg-succes">{category}</p>
+                    <h1 className="display-6 fw-semibold mb-3">{title}</h1>
+                    <span className="badge bg-success mb-3">{category}</span>
                     <h2 className="fw-bold">&euro;{price}</h2>
                     <p>⭐ {rating?.rate} ({rating?.count})</p>
                     <div className="product-description">
