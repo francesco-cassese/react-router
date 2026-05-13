@@ -2,25 +2,46 @@ import Card from "./Card"
 
 function ProductList({ products }) {
     console.log('productList', products);
+    const uniqueCategories = [];
+    for (let i = 0; i < products.length; i++) {
+        const currentCategory = products[i].category;
+
+        if (uniqueCategories.includes(currentCategory) === false) {
+            uniqueCategories.push(currentCategory);
+        }
+    }
+
     return (
-        <div className="container">
-            <ul className="row list-unstyled d-flex flex-wrap">
-                {products.map(product => {
-                    return (
-                        <li key={product.id} className="col-12 col-md-6 col-lg-3">
-                            <Card
-                                image={product.image}
-                                title={product.title}
-                                category={product.category}
-                                description={product.description}
-                                price={product.price}
-                                rating={product.rating}
-                            />
-                        </li>
-                    )
-                })}
-            </ul>
+        <div className="container py-4">
+
+            {uniqueCategories.map(category => (
+                <section key={category} className="mb-5">
+
+                    <h2 className="border-bottom pb-2 mb-4 text-secondary">
+                        {category}
+                    </h2>
+
+                    <ul className="row list-unstyled g-4">
+                        {products
+                            .filter(product => product.category === category)
+                            .map(filteredProduct => (
+                                <li key={filteredProduct.id} className="col-12 col-md-6 col-lg-3">
+                                    <Card
+                                        image={filteredProduct.image}
+                                        title={filteredProduct.title}
+                                        category={filteredProduct.category}
+                                        description={filteredProduct.description}
+                                        price={filteredProduct.price}
+                                        rating={filteredProduct.rating}
+                                    />
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+            ))}
         </div>
-    )
+    );
 }
+
 export default ProductList

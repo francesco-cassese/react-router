@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 
-.card {
-  min-width: 300px;
+.container-img img {
+  object-fit: cover;
 }
 
-.container-img img {
-
-  object-fit: cover;
+.card {
+  cursor: pointer;
 }

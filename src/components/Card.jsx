@@ -1,17 +1,26 @@
 function Card({ image, title, category, description, price, rating }) {
     return (
-        < article className="card p-3 h-100 d-flex f-column justify-content-between" >
-            <h5>{title}</h5>
+        < article className="card p-3 h-100 d-flex f-column justify-content-between shadow" >
+            <h5 className="line-clamp">{title}</h5>
             <div className="container-img">
                 <img src={image} alt={title} className="d-block w-100" />
             </div>
             <div className="container-info small">
-                <span>{category}</span>
-                <p>{description}</p>
-                <div className="container-details d-flex fw-bold justify-content-between">
-                    <span>&euro;{price}</span>
-                    <span>{rating?.rate}</span>
-                    <span>{rating?.count}</span>
+                <span className="badge rounded-pill bg-success mb-2 p-2">{category}</span>
+                {/* <p>{description}</p> */}
+                <div className="container-details d-flex justify-content-between">
+                    <div className="container-price d-flex flex-column">
+                        <span className="text-muted">Price</span>
+                        <span className="fw-bold">&euro;{price}</span>
+                    </div>
+                    <div className="container-rate d-flex flex-column">
+                        <span className="text-muted">Rate</span>
+                        <span>⭐{rating?.rate}</span>
+                    </div>
+                    <div className="container-count d-flex flex-column">
+                        <span className="text-muted">Count</span>
+                        <span className="text-muted">{rating?.count}</span>
+                    </div>
                 </div>
             </div>
         </article>
