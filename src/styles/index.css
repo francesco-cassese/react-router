@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .container-img img {
   object-fit: cover;
 }

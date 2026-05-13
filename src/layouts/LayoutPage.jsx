@@ -5,13 +5,16 @@ import Footer from "../components/Footer.jsx"
 function LayoutPage() {
     return (
         <>
-            <header>
-                <Navbar />
-            </header>
-            <main>
-                <Outlet />
-            </main>
-            <Footer />
+            <div className="wrapper">
+                <header >
+                    <Navbar />
+                </header >
+                <main>
+                    <Outlet />
+                </main>
+                <Footer />
+            </div>
+
         </>
     )
 }

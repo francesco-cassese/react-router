@@ -18,16 +18,14 @@ function ProductDetails({ productList, fakeEcomUrl }) {
     }
 
     return (
-        <div className="container col-3 py-5 d-flex justify-content-center">
-            <Card
-                image={product.image}
-                title={product.title}
-                category={product.category}
-                description={product.description}
-                price={product.price}
-                rating={product.rating}
-            />
-        </div>
+        <Card
+            image={product.image}
+            title={product.title}
+            category={product.category}
+            description={product.description}
+            price={product.price}
+            rating={product.rating}
+        />
     )
 }
 export default ProductDetails
