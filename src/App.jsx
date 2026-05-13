@@ -24,6 +24,9 @@ function App() {
 
           {/* http://localhost:5173/prodotti */}
           <Route path="prodotti" element={<Prodotti productList={data} />} />
+
+          {/* http://localhost:5173/prodotti */}
+          <Route path="prodotti/:id" element={<ProductDetails productList={data} />} />
         </Route>
         {/* Pagina non trovata*/}
         <Route path="*" element={<NotFound />} />
