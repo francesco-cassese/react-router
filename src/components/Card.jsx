@@ -8,16 +8,23 @@ function Card({ image, title, category, description, price, rating }) {
         setIsExpanded(!isExpanded);
     };
     return (
-        <section className="d-flex">
-            <div className="section-left">
-                <div className="single-product-img">
-                    <img src={image} alt={title} />
+        <section>
+            <div className="d-flex">
+                <div className="section-left">
+                    <div className="single-product-img">
+                        <img src={image} alt={title} />
+                    </div>
+                </div>
+                <div className="section-right">
+                    <h1>{title}</h1>
+                    <p className="bg-succes">{category}</p>
+                    <h2 className="fw-bold">&euro;{price}</h2>
+                    <p>⭐ {rating?.rate} ({rating?.count})</p>
                 </div>
             </div>
-            <div className="section-right">
-                <h1>{title}</h1>
-                <span className="badge bg-succes">{category}</span>
-                <span className="fw-bold">&euro;{price}</span>
+            <div className="product-description">
+                <h3>Descrizione</h3>
+                <p>{description}</p>
             </div>
 
         </section>
