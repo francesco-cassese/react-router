@@ -7,11 +7,13 @@ import LayoutPage from "./layouts/LayoutPage.jsx";
 import dreamTeam from "./data/dreamTeam.js";
 import useFetch from "./hooks/useFetch.js";
 import { useEffect, useState } from "react";
+import ProductDetails from "./pages/ProductDetails.jsx";
 
 const fakeEcomUrl = 'https://fakestoreapi.com/products'
 
 function App() {
   const data = useFetch(fakeEcomUrl);
+  if (!data) return <div className="text-center py-5">Caricamento prodotti...</div>;
   return (
     <BrowserRouter >
       <Routes>
