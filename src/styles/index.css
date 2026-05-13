@@ -12,6 +12,19 @@
   cursor: pointer;
 }
 
+.card-image {
+  width: 100%;
+}
+
+.card-preview {
+  min-height: 400px;
+}
+
+.container-img-preview {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
 .clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;

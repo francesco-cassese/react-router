@@ -25,14 +25,20 @@ function ProductList({ products }) {
                             .filter(product => product.category === category)
                             .map(filteredProduct => (
                                 <li key={filteredProduct.id} className="col-12 col-md-6 col-lg-3">
-                                    <Card
+                                    <div className="card card-preview rounded-3 border-0 shadow h-100 p-3 d-flex flex-column justify-content-between">
+                                        <h5 className="card-title card-text text-secondary">{filteredProduct.title}</h5>
+                                        <div className="w-100 container-img-preview">
+                                            <img src={filteredProduct.image} alt={filteredProduct.title} className="d-block card-image" />
+                                        </div>
+                                    </div>
+                                    {/* <Card
                                         image={filteredProduct.image}
                                         title={filteredProduct.title}
                                         category={filteredProduct.category}
                                         description={filteredProduct.description}
                                         price={filteredProduct.price}
                                         rating={filteredProduct.rating}
-                                    />
+                                    /> */}
                                 </li>
                             ))
                         }
