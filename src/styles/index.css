@@ -19,3 +19,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.img-team {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description-member {
+  cursor: pointer;
+}

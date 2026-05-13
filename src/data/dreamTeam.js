@@ -1,7 +1,7 @@
 const dreamTeam = [
     {
         id: 1,
-        nome: "Matteo",
+        nome: "Matteo Senzabudget",
         ruolo: "Il Grande Capo (CEO)",
         titoloUfficiale: "Visionario Strategico e Gran Maestro delle Riunioni Inutili",
         cosaFaDavvero: "Passa l'80% del tempo a cercare di far funzionare la stampante e il restante 20% a proporre idee senza budget.",
@@ -10,16 +10,16 @@ const dreamTeam = [
     },
     {
         id: 2,
-        nome: "Giulia",
+        nome: "Giuditta Incastri",
         ruolo: "Responsabile Logistica",
         titoloUfficiale: "Ninja del Nastro Adesivo e Signora dei Tetris",
         cosaFaDavvero: "Si assicura che il tuo ordine arrivi integro nonostante i corrieri giochino a bowling con le scatole.",
         superpotereInutile: "Sa incartare un set di calici da vino usando solo un foglio di giornale e la forza del pensiero.",
-        foto: "giulia.jpg"
+        foto: "giuditta.jpg"
     },
     {
         id: 3,
-        nome: "Davide",
+        nome: "Davide Localhost",
         ruolo: "Sviluppatore Web",
         titoloUfficiale: "Traduttore Umano-Computer e Divoratore di Pizza Fredda",
         cosaFaDavvero: "Scrive codice che solo lui capisce. Quando il sito cade, dice: 'Strano, sul mio PC funzionava'.",
@@ -28,7 +28,7 @@ const dreamTeam = [
     },
     {
         id: 4,
-        nome: "Elena",
+        nome: "Elena Puntiesclamativi",
         ruolo: "Servizio Clienti",
         titoloUfficiale: "Psicologa dei Commenti e Ambasciatrice della Gentilezza",
         cosaFaDavvero: "Risponde alle email dei clienti cercando di non usare troppi punti esclamativi.",

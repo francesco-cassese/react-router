@@ -23,7 +23,7 @@ function App() {
           <Route path="" element={<Homepage />} />
 
           {/* http://localhost:5173/chi-siamo */}
-          <Route path="chi-siamo" element={<ChiSiamo member={dreamTeam} />} />
+          <Route path="chi-siamo" element={<ChiSiamo members={dreamTeam} />} />
 
           {/* http://localhost:5173/prodotti */}
           <Route path="prodotti" element={<Prodotti productList={data} />} />
