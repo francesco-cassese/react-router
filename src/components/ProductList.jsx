@@ -2,6 +2,7 @@ import Card from "./Card"
 
 function ProductList({ products }) {
     console.log('productList', products);
+
     const uniqueCategories = [];
     for (let i = 0; i < products.length; i++) {
         const currentCategory = products[i].category;
@@ -16,11 +17,9 @@ function ProductList({ products }) {
 
             {uniqueCategories.map(category => (
                 <section key={category} className="mb-5">
-
                     <h2 className="border-bottom pb-2 mb-4 text-secondary">
                         {category}
                     </h2>
-
                     <ul className="row list-unstyled g-4">
                         {products
                             .filter(product => product.category === category)
