@@ -1,6 +1,16 @@
+import { Link } from "react-router";
+
 function Homepage() {
     return (
-        <h1>BENVENUTI</h1>
-    )
+        <div className="welcome-hero ps-3">
+            <h1 className="display-2 fw-bold mb-2 clean-title">Shop.js</h1>
+
+            <p className="fs-4 mb-4 clean-subtitle">
+                L'unico posto dove i bug sono "funzionalità creative"
+                e il budget è solo un suggerimento.
+            </p>
+        </div>
+    );
 }
-export default Homepage
+
+export default Homepage;
