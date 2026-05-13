@@ -16,7 +16,7 @@ function useFetch(url) {
                 console.error(error);
             });
     }, []);
-    return { data };
+    return data;
 }
 
 export default useFetch; 

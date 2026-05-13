@@ -11,10 +11,7 @@ import { useEffect, useState } from "react";
 const fakeEcomUrl = 'https://fakestoreapi.com/products'
 
 function App() {
-  const { data } = useFetch(fakeEcomUrl);
-  if (data) {
-    console.log('app', data);
-  }
+  const data = useFetch(fakeEcomUrl);
   return (
     <BrowserRouter >
       <Routes>
