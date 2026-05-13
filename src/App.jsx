@@ -9,9 +9,11 @@ import useFetch from "./hooks/useFetch.js";
 import { useEffect, useState } from "react";
 import ProductDetails from "./pages/ProductDetails.jsx";
 
-const fakeEcomUrl = 'https://fakestoreapi.com/products'
 
 function App() {
+
+  const fakeEcomUrl = 'https://fakestoreapi.com/products'
+
   const data = useFetch(fakeEcomUrl);
   if (!data) return <div className="text-center py-5">Caricamento prodotti...</div>;
   return (
@@ -29,7 +31,9 @@ function App() {
           <Route path="prodotti" element={<Prodotti productList={data} />} />
 
           {/* http://localhost:5173/prodotti */}
-          <Route path="prodotti/:id" element={<ProductDetails productList={data} />} />
+          <Route path="prodotti/:id" element={<ProductDetails
+            productList={data}
+            fakeEcomUrl={fakeEcomUrl} />} />
 
         </Route>
         {/* Pagina non trovata*/}
